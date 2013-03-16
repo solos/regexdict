@@ -1,0 +1,27 @@
+.center {
+    margin: 0 auto;
+}
+
+.centered {
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.span5 {
+    width: 100%;
+}
+
+
+#table {
+    margin: 0 auto !important;
+    text-align: center;
+    width: 50%;
+}
+
+.input-append {
+    height: 46px !important;
+}
+
+#regex {
+    height: 30px !important;
+}
