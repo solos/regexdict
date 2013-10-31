@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="RegexDict">
+<head>
+<title>dict</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/dict.js"></script>
+</head>
+    <body>
+   <div ng-controller="TestCtrl">
+     <input type="text" value="" id="word" ng-model="word"/>
+     <li ng-repeat="(word, des) in description">{{word}}, {{des}}</li>
+   </div>
+   
+   <script type="text/javascript">
+        var TestCtrl = function($scope, $element){
+        $scope.description = '';
+        $scope.descriptions = dict;
+        $scope.$watch('word',
+            function(to, from){
+                var filter = eval('/^' + to + '.*$/');
+                var count = 0;
+                var wordlist = {};
+                for (i in $scope.descriptions){
+                    if (count < 50) {
+                        if (filter.test(i)){
+                            wordlist[i] = $scope.descriptions[i];
+                            count += 1;
+                        }
+                    }
+                };
+                $scope.description = wordlist;
+            })
+        };
+        //angular.bootstrap(document.documentElement);
+        //angular.module('RegexDict', [], function(){console.log('here')});
+        angular.module('RegexDict', []);
+    </script>
+    </body>
+</html>

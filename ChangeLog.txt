@@ -1,5 +1,0 @@
-# regexdict changelog
-
-## 2013-03-16 0.1
-
-* First public version.
