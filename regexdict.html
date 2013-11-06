@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="RegexDict">
+    <head>
+        <title>RegexDict-正则表达式词典</title>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen,print" /> 
+        <script type="text/javascript" src="./js/angular.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+        <script type="text/javascript" src="./js/dict.js"></script>
+    </head>
+    <body>
+        <div id="main" ng-controller="RegexDictCtrl">
+            <a target="_blank" href="http://regexdict.com" title="正则表达式词典在线版"><img alt="regexdict.com" src="./logo.png"></img></a>
+            <iframe src="http://ghbtns.com/github-btn.html?user=solos&repo=regexdict&type=watch&size=large"
+                allowtransparency="true" frameborder="0" scrolling="0" width="15%" height="50"></iframe> 
+            <iframe src="http://ghbtns.com/github-btn.html?user=solos&type=follow&size=large"
+                allowtransparency="true" frameborder="0" scrolling="no" width="20%" height="50"></iframe> 
+            <div id="search">
+                <input id="word" type="text" value="" ng-model="word" placeholder="请输入正则表达式" align="center"/>
+            </div>
+            <div>
+                <ul>
+                    <li class="word" ng-repeat="(word, des) in description"><p> {{word}} </br> {{des}}</p> </li>
+                </ul>
+            </div>
+        <div id=footer>
+            广告位招租
+            <a href="http://solos.so">blog</a>,
+            <a href="mailto:solos@solos.so">mail</a>,
+            <a href="http://twitter.com/jht360">twitter</a>,
+            <a href="http://weibo.com/appl">新浪微博</a>,
+            <a href="http://github.com/solos">github</a>,
+            <a href="http://bitbucket.org/solos">bitbucket</a>.
+        </div> 
+
+        </div>
+        <!--<div id="footer">
+            <iframe width="100"″ height="25"″ frameborder="0"″ scrolling="no" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=65&height=24&uid=1643331153&style=1&btn=red&dpc=1"></iframe>
+            <iframe width="100"″ height="25"″ frameborder="0"″ scrolling="no" src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=solosso&style=5&t=1352122723728&f=0"></iframe>
+            <p>By <a href="http://solos.so">solos</a></p>
+                    </div>
+        -->
+        </body>
+</html>
