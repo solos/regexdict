@@ -6,22 +6,8 @@
 
   demo: http://regexdict.com/
 
-## 目录介绍
+  增加chrome app: https://chrome.google.com/webstore/detail/regexdict/fbaeaihlnmngmbbejjbmjkdhlmimaknf
 
-1. ./ChangeLog.txt :变更历史
-1. ./LICENES.txt :协议
-1. ./MANIFEST.in :文件清单，distutils默认只打包指定模块下的.py文件,其它的要在这里指定
-1. ./README.md :项目介绍
-1. ./requirements.txt :项目需要依赖哪些模块
-1. ./setup.py :安装文件
-1. ./docs/ :文档目录
-1. ./docs/analysis.model.md :概要设计文档
-1. ./docs/design.model.md :详细设计文档
-1. ./docs/maintain.md :维护文档
-1. ./src/ :源码目录
-1. ./src/regexdict : 项目代码
-1. ./src/regexdict/stuff :杂项文件，在setup.py里用package_data参数指定
-1. ./test/ :测试目录
-1. ./test/run_all_test.sh :执行test目录下的所有单元测试
-1. ./test/test_regexdict.py :测试示例
-
+## chrome app demo
+    
+   [<img src="http://ww3.sinaimg.cn/large/61f33e51tw1eanz0hlrkog20zk0m8aij.gif">](https://chrome.google.com/webstore/detail/regexdict/fbaeaihlnmngmbbejjbmjkdhlmimaknf)
