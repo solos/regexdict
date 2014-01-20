@@ -1,18 +1,20 @@
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
+
 import sys
 sys.path.append('./src')
 from distutils.core import setup
-from pyempty import __version__
+from regexdict import __version__
 
-setup(name='pyempty',
+setup(name='regexdict',
       version=__version__,
-      description='empty python project template',
+      description='Regex Dict',
       long_description=open("README.md").read(),
-      author='onlytiancai',
-      author_email='onlytiancai@gmail.com',
-      packages=['pyempty'],
-      package_dir={'pyempty': 'src/pyempty'},
-      package_data={'pyempty': ['stuff']},
-      license="Public domain",
+      author='solos',
+      author_email='solos@solos.so',
+      packages=['regexdict'],
+      package_dir={'regexdict': 'src/regexdict'},
+      package_data={'regexdict': ['stuff']},
+      license="MIT",
       platforms=["any"],
-      url='https://github.com/onlytiancai/pyempty')
+      url='https://github.com/solos/regexdict')

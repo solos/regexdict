@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
 import sys
@@ -15,7 +16,7 @@ class DefaultTestCase(unittest.TestCase):
         pass
 
     def test_version(self):
-        self.assertIsNotNone(regexdict.__version__, '0.1')
+        self.assertIsNotNone(regexdict.__version__, '0.0.1')
 
 
 def suite():
