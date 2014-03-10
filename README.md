@@ -4,7 +4,7 @@
   
   regexdict 是一个使用正则表达式查询单词的网站，使用mongodb对正则表达式的支持实现，另外附带了一个不使用数据库的python实现。
 
-  demo: http://regexdict.com/
+  demo: http://regexdict.solos.so/
 
   增加chrome app: https://chrome.google.com/webstore/detail/regexdict/fbaeaihlnmngmbbejjbmjkdhlmimaknf
 
